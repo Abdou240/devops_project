@@ -73,6 +73,7 @@ app.get("/", (req, res) => {
 
       </div>
     </div>
+    
     <div class="profile">
       <img src="https://avatars.githubusercontent.com/u/79573933?v=4" alt="Your Profile Photo">
     </div>
