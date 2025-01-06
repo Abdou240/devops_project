@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #101010;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 150px;
+    background-color: #111827;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .profiles img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px; /* Reduced padding from 125px */
+}
+
+.intro .text {
+    max-width: 60%;
+}
+
+.intro .text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro .text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.intro .tech-stack {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.intro .tech-stack span {
+    padding: 5px 10px;
+    background-color: #1e1e2f;
+    border-radius: 5px;
+}
+
+.intro .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Projects Section */
+.projects {
+    padding: 0; /* Removed padding to reduce space between sections */
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 33.33%; /* Show three items (100% / 3 = 33.33%) */
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Adjust carousel item styles for better alignment */
+.project {
+    padding: 10px; /* Add some padding if needed */
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1118277e;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e2f;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
