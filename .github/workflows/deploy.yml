@@ -31,7 +31,7 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: |-
-          terraform plan -destroy \
+          terraform plan  \
           -var="region=eu-north-1" \
           -var="public_key=$PUBLIC_SSH_KEY" \
           -var="private_key=$PRIVATE_SSH_KEY" \
@@ -69,8 +69,6 @@ jobs:
         working-directory: ./nodeapp
       - name: Deploy docker image to EC2
         env:
-          SERVER_PUBLIC_IP: 12.34.56.78
-          PRIVATE_SSH_KEY: ${{ secrets.PRIVATE_SSH_KEY }}
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: example-node-app
           IMAGE_TAG: ${{ github.sha }}
@@ -90,5 +88,3 @@ jobs:
             sudo docker rm myappcontainer || true
             sudo docker pull $REGISTRY/$REPOSITORY:$IMAGE_TAG
             sudo docker run -d --name myappcontainer -p 80:8080 $REGISTRY/$REPOSITORY:$IMAGE_TAG
-      
-      
