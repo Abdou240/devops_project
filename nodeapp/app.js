@@ -54,7 +54,6 @@ app.get("/", (req, res) => {
         <span>Kubernetes</span>
         <span>Docker</span>
         <span>Terraform</span>
-        
         <span>AWS</span>
         <span>OpenStack</span>
         <span>Prometheus</span>
