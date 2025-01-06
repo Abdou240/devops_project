@@ -62,7 +62,6 @@ app.get("/", (req, res) => {
         <span>OWASP ZAP</span>
         <span>Nexus</span>
         <span>Java</span>
-      
         <span>React.js</span>
         <span>Laravel</span>
         <span>Angular</span>
