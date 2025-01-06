@@ -1,4 +1,4 @@
-#  CI/CD PipeLine with Terraform and AWS
+#  CI/CD PipeLine with Terraform and AWS 
 
 ![image](https://github.com/user-attachments/assets/2d631ab2-a9cb-4372-bbe0-69d48312d480)
 
